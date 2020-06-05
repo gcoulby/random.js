@@ -2,13 +2,13 @@ class Random {
 
 
     int() {
-        min = 0;
-        max = Number.MAX_SAFE_INTEGER;
+        let min = 0;
+        let max = Number.MAX_SAFE_INTEGER;
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
     intBelow(max) {
-        min = 0;
+        let min = 0;
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
@@ -16,8 +16,18 @@ class Random {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
+    float() {
+        let min = 0
+        let max = Number.MAX_SAFE_INTEGER
+        return Math.random() * (max - min + 1) + min;
+    }
 
-    nextFloat(min = 0, max = Number.MAX_SAFE_INTEGER) {
+    floatBelow(max) {
+        let min = 0;
+        return Math.random() * (max - min + 1) + min;
+    }
+
+    floatBetween(min, max) {
         return Math.random() * (max - min + 1) + min;
     }
 
