@@ -33,3 +33,5 @@ class Random {
         return Math.Random();
     }
 }
+
+module.exports = Random;
