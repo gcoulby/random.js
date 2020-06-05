@@ -12,7 +12,7 @@ class Random {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
-    intFromRange(min, max) {
+    intBetween(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
