@@ -14,18 +14,18 @@ export class Random {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
-    nextDouble() {
+    nextFloat() {
         let min = 0;
         let max = parseFloat(Number.MAX_SAFE_INTEGER);
         return Math.random() * (max - min + 1) + min;
     }
 
-    nextDouble(max) {
+    nextFloat(max) {
         let min = 0;
         return Math.random() * (max - min + 1) + min;
     }
 
-    nextDouble(min, max) {
+    nextFloat(min, max) {
         return Math.random() * (max - min + 1) + min;
     }
 
