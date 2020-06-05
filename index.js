@@ -1,4 +1,4 @@
-module.exports = class Random {
+class Random {
     next() {
         let min = 0;
         let max = Number.MAX_SAFE_INTEGER;
