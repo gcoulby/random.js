@@ -38,8 +38,11 @@ Random.nextFloat();
 // Return a non-negative random floating-point number that is less than the specified maximum.
 Random.nextFloat(max = 12);
 
-// Returns a random floating-point number that is within a specified range.
+// Return a random floating-point number that is within a specified range.
 Random.nextFloat(min = 10, max = 20);
+
+// Return a random floating-point number between 0.0 and 1.0.
+Random.sample();
 
 ```
 
