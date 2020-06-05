@@ -24,25 +24,34 @@ Examples:
 
 ```javascript
 // Get a Random integer between 0 and MAX_SAFE_INTEGER
-Random.next();
+Random.int();
 
 // Return a non-negative random integer that is less than the specified maximum.
-Random.next(max = 12);
+Random.intBelow(max = 12);
 
 // Returns a random integer that is within a specified range.
-Random.next(min = 10, max = 20);
+Random.intBetween(min = 10, max = 20);
 
 // Get a Random floating-point number between 0 and MAX_SAFE_INTEGER
-Random.nextFloat();
+Random.float();
 
 // Return a non-negative random floating-point number that is less than the specified maximum.
-Random.nextFloat(max = 12);
+Random.floatBelow(max = 12);
 
 // Return a random floating-point number that is within a specified range.
-Random.nextFloat(min = 10, max = 20);
+Random.floatBetween(min = 10, max = 20);
 
 // Return a random floating-point number between 0.0 and 1.0.
 Random.sample();
+
+
+console.log(rand.int());
+console.log(rand.intBelow(10));
+console.log(rand.intBetween(10, 20));
+
+console.log(rand.float());
+console.log(rand.floatBelow(10));
+console.log(rand.floatBetween(10, 20));
 
 ```
 
