@@ -68,9 +68,13 @@ console.log(rand.floatBetween(10, 20));
 
 ## Methods & Overloads
 
-| Method                                            | Action                                                       |
-| ------------------------------------------------- | ------------------------------------------------------------ |
-| next(min = 0, max = Number.MAX_SAFE_INTEGER)      | Returns a random integer that is within a specified range.   |
-| nextFloat(min = 0, max = Number.MAX_SAFE_INTEGER) | Returns a random float-point number that is within a specified range. |
-| sample()                                          | Returns a random floating-point number between 0.0 and 1.0.  |
+| Method                  | Action                                                       |
+| ----------------------- | ------------------------------------------------------------ |
+| int()                  | Returns a non-negative random integer.                       |
+| intBelow(max)               | Returns a non-negative random integer that is less than the specified maximum. |
+| intBetween(min, max)          | Returns a random integer that is within a specified range.   |
+| float()             | Returns a non-negative random floating-point number.         |
+| floatBelow(max)        | Returns a non-negative random floating-point number that is less than the specified maximum. |
+| floatBetween(min, max) | Returns a random float-point number that is within a specified range. |
+| sample()                | Returns a random floating-point number between 0.0 and 1.0.  |
 
